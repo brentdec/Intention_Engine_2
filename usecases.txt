@@ -1,0 +1,6 @@
+enter goal
+open file
+write goal to file
+close file
+open file
+load file

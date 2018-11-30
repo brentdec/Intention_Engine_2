@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Goals!</title>
+</head>
+<body>
+{% if latest_goal_list %}
+
+    <ul>
+    {% for goal in Goals.all %}
+        <li>{{ Goals.label }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No goals are available.</p>
+{% endif %}
+</body>
+</html>
